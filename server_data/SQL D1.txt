@@ -1,0 +1,37 @@
+CREATE DATABASE FOE;
+
+USE foe;
+
+CREATE TABLE DEPARTMENT (
+    Dept_ID varchar(45) NOT NULL,  
+    Dept_Head varchar(255) NOT NULL,
+    PRIMARY KEY (Dept_ID)
+);
+
+CREATE TABLE EMPLOYEE (
+    Empl_ID varchar(10) NOT NULL,  
+    Dept_ID varchar(50),
+    Area varchar(50),
+    Designation varchar(50),
+    PRIMARY KEY (Empl_ID)
+);
+
+INSERT INTO DEPARTMENT (Dept_ID, Dept_Head) VALUES ('EIE', 'Menuka');
+
+INSERT INTO DEPARTMENT VALUES ('MME', 'Ranil');
+
+INSERT INTO DEPARTMENT VALUES ('CEE', 'Lasitha');
+
+INSERT INTO EMPLOYEE 
+VALUES ('EE001', 'EIE',  'Software',  'Lecturer');
+INSERT INTO EMPLOYEE 
+VALUES ('EE002', 'EIE',  'Communication',  'Senior Lecturer');
+INSERT INTO EMPLOYEE
+VALUES ('MM007', 'MME',  'Automobile',  'Lecturer');
+INSERT INTO EMPLOYEE
+VALUES ('MM001', 'MME',  'Manufacturing',  'Senior Lecturer');
+INSERT INTO EMPLOYEE 
+VALUES ('CE001', 'CEE',  null,  'Lab Attendant');
+INSERT INTO EMPLOYEE 
+VALUES ('CE003', 'CEE',  'Structural',  'Lecturer');
+INSERT IN
